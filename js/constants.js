@@ -37,7 +37,7 @@ const fuelGainMax = 50;
 const fuelGainExtra = 10;
 const fuelAlertThreshold = fuelPenaltyMin;
 
-const landingAngleTolerance = 6.7 * (Math.PI / 180);
+const landingAngleTolerance = 10 * (Math.PI / 180);
 const landingVelocityTolerance = 10.0;
 
 const numOfStars = 100;
