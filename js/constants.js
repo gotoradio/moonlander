@@ -28,8 +28,8 @@ const mainScale = landerScale/2;
 const smallScale = landerScale/8;
 
 const startingFuel = 1000;
-const fuelConsumptionRateMin = 4;
-const fuelConsumptionRateMax = 14;
+const fuelConsumptionRateMin = 0;
+const fuelConsumptionRateMax = 0;
 const fuelPenaltyMin = 300;
 const fuelPenaltyMax = 350;
 const fuelGainMin = 50;
@@ -38,7 +38,7 @@ const fuelGainExtra = 10;
 const fuelAlertThreshold = fuelPenaltyMin;
 
 const landingAngleTolerance = 6.7 * (Math.PI / 180);
-const landingVelocityTolerance = 5.0;
+const landingVelocityTolerance = 10.0;
 
 const numOfStars = 100;
 
