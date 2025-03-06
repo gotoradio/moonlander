@@ -6,6 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Lunar Lander</title>
         <link type="text/css" rel="stylesheet" href="css/main.css">
+        <style>
+            #buttons {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed; /* This ensures the element stays fixed on the screen */
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            right: 20px; /* Distance from the right of the viewport */
+        }
+        </style>
     </head>
     <body>
         <script src="https://unpkg.com/three@0.124.0"></script>
@@ -16,5 +26,11 @@
         <script src="js/hud.js"></script>
         <script src="js/particles.js"></script>
         <script src="js/main.js"></script>
+        <div id="element">
+            <button id="up" class="arrow-button">&#8593; Up</button>
+            <button id="down" class="arrow-button">&#8595; Down</button>
+            <button id="left" class="arrow-button">&#8592; Left</button>
+            <button id="right" class="arrow-button">&#8594; Right</button>
+        </div>
     </body>
 </html>
