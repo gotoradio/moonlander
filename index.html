@@ -28,7 +28,11 @@
             width: 70px;              /* Set width for consistency */
             height: 70px;             /* Set height for consistency */
             text-align: center;      /* Center the text inside the button */
-            user-select: none;
+            -webkit-user-select: none; /* Safari, Chrome */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* Internet Explorer/Edge */
+            user-select: none;         /* Standard */
+            -webkit-touch-callout: none; /* Deaktiviert das Callout-Menü bei langem Drücken auf iOS */
         }
 
         .arrow-button:hover {
