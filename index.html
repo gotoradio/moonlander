@@ -56,9 +56,9 @@
         <script src="js/main.js"></script>
         
         <div id="button-container">
-            <button id="left" class="arrow-button">&#8592;</button>
-            <button id="up" class="arrow-button">&#8593;</button>
-            <button id="right" class="arrow-button">&#8594;</button>
+            <button id="left" class="arrow-button" onclick="onKeyDown('ArrowLeft')" onmouseup="onKeyUp('ArrowLeft')">&#8592;</button>
+            <button id="up" class="arrow-button" onclick="onKeyDown('ArrowUp')" onmouseup="onKeyUp('ArrowLeft')">&#8593;</button>
+            <button id="right" class="arrow-button" onclick="onKeyDown('ArrowRight')" onmouseup="onKeyUp('ArrowLeft')">&#8594;</button>
         </div>
     </body>
 </html>

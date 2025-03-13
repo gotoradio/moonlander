@@ -3,8 +3,8 @@ window.onload = function() {
     animate();
 
     window.addEventListener('resize', onWindowResize);
-    window.addEventListener('keydown', onKeyDown);
-    window.addEventListener('keyup', onKeyUp);
+    //window.addEventListener('keydown', onKeyDown);
+    //window.addEventListener('keyup', onKeyUp);
 
     document.addEventListener('visibilitychange', onLoseFocus);
 }
@@ -590,33 +590,33 @@ function onKeyDown(event) {
         resetGame();
     }
 
-    if(event.key=="ArrowUp"){
+    if(event=="ArrowUp"){
         accelerating = true;
     }
-    if(event.key=="ArrowLeft"){
+    if(event=="ArrowLeft"){
         rotatingLeft = true;
     }
-    if(event.key=="ArrowRight"){
+    if(event=="ArrowRight"){
         rotatingRight = true;
     }
 
-    if(event.key=="p"){
+    if(event=="p"){
         if(!isGameOver) isPaused = !isPaused;
     }
 
-    if(event.key=="d"){
+    if(event=="d"){
         toggleDebug();
     }
 }
 
 function onKeyUp(event) {
-    if(event.key=="ArrowUp"){
+    if(event=="ArrowUp"){
         accelerating = false;
     }
-    if(event.key=="ArrowLeft"){
+    if(event=="ArrowLeft"){
         rotatingLeft = false;
     }
-    if(event.key=="ArrowRight"){
+    if(event=="ArrowRight"){
         rotatingRight = false;
     }
 }
